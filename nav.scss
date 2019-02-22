@@ -1,0 +1,97 @@
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    
+    a {
+        @include basic;
+        text-decoration: none;
+        flex: 1 100%;
+    }
+    
+    a:before {
+        @include mat-icon;
+    } 
+    
+    #dashboard {
+        &:before {
+            content: 'dashboard';
+        }
+        
+        &:after {
+            content: 'Dashboard';
+        }
+    }
+    
+    #customers {
+        &:before {
+            content: 'perm_identity';
+        }
+        
+        &:after {
+            content: 'Customers';
+        }
+    }
+    
+   #segments {
+        &:before {
+            content: 'label';
+        }
+        
+        &:after {
+            content: 'Segments';
+        }
+    }
+    
+   #others {
+        &:before {
+            content: 'attach_money';
+        }
+        
+        &:after {
+            content: 'Others';
+        }
+    }
+   
+    #posters {
+        &:before {
+            content: 'perm_media';
+        }
+        
+        &:after {
+            content: 'Posters';
+        }
+    }
+    
+    #categories {
+        &:before {
+            content: 'turned_in';
+        }
+        
+        &:after {
+            content: 'Categories';
+        }
+    }
+   
+    #reviews {
+        &:before {
+            content: 'chat';
+        }
+        
+        &:after {
+            content: 'Reviews';
+        }
+    }
+    
+    #configuration {
+        &:before {
+            content: 'settings';
+        }
+        
+        &:after {
+            content: 'Configuration';
+        }
+    }
+}
+    
+  

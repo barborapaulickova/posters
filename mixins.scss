@@ -1,0 +1,13 @@
+@mixin mat-icon {
+    font-family: 'Material Icons';
+    padding: 10px;
+    font-size: $font-mat-size;
+    vertical-align: bottom;
+}
+
+@mixin basic {
+    font-family: $font-family-basic;
+    font-size: $font-m-size;
+    font-weight: 600;
+}
+
