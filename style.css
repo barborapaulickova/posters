@@ -1,0 +1,209 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.global {
+  background-color: #283593;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex: 1 100%;
+}
+.global h1 {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+.global h1:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "menu";
+}
+.global .logout {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.global .logout:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  text-transform: lowercase;
+  content: "power_settings_new";
+}
+.global .logout:after {
+  text-transform: uppercase;
+  content: "logout";
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+}
+nav a {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  flex: 1 100%;
+}
+nav a:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+}
+nav #dashboard:before {
+  content: "dashboard";
+}
+nav #dashboard:after {
+  content: "Dashboard";
+}
+nav #customers:before {
+  content: "perm_identity";
+}
+nav #customers:after {
+  content: "Customers";
+}
+nav #segments:before {
+  content: "label";
+}
+nav #segments:after {
+  content: "Segments";
+}
+nav #others:before {
+  content: "attach_money";
+}
+nav #others:after {
+  content: "Others";
+}
+nav #posters:before {
+  content: "perm_media";
+}
+nav #posters:after {
+  content: "Posters";
+}
+nav #categories:before {
+  content: "turned_in";
+}
+nav #categories:after {
+  content: "Categories";
+}
+nav #reviews:before {
+  content: "chat";
+}
+nav #reviews:after {
+  content: "Reviews";
+}
+nav #configuration:before {
+  content: "settings";
+}
+nav #configuration:after {
+  content: "Configuration";
+}
+
+.list {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 5;
+}
+.list .list-title {
+  display: flex;
+  flex: 1 100%;
+  justify-content: space-between;
+}
+.list .list-title .refresh {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.list .list-title .refresh:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "refresh";
+}
+.list .list-title .refresh:after {
+  text-transform: uppercase;
+  content: "refresh";
+}
+.list table {
+  flex: 1 100%;
+}
+.list table .name {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.list table .name:before {
+  content: "Name";
+}
+.list table .name:after {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "arrow_upward";
+}
+.list table .products {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.list table .products:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "perm_media";
+}
+.list table .products:after {
+  text-transform: uppercase;
+  content: "products";
+}
+.list table .edit {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.list table .edit:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "edit";
+}
+.list table .edit:after {
+  text-transform: uppercase;
+  content: "edit";
+}
+.list .table-footer {
+  flex: 1 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.list .table-footer .next {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.list .table-footer .next:before {
+  text-transform: uppercase;
+  content: "next";
+}
+.list .table-footer .next:after {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "keyboard_arrow_right";
+}
+
+/*# sourceMappingURL=style.css.map */
