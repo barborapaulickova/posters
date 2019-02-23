@@ -33,11 +33,19 @@
         }
         
         .table-footer {
+            .total-pages {
+                letter-spacing: 5px;
+            }
+            
             .next {
                 &:after {
                     font-size: $font-xs-size;
                 }
             }
+        }
+        
+        .post-item {
+            height: 30%;
         }
     }
     

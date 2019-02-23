@@ -1,0 +1,86 @@
+.login-container {
+    background-image: url(img/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+    
+    .login-window {
+        display: flex;
+        flex-direction: column;
+        padding: $padding-basic;
+        background-color: $white;
+        margin: 10% 35%;
+        min-height: 200px;
+        border-radius: 5px;
+        justify-content: center;
+        
+        .lock {
+            background-color: $pink;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            align-self: center;
+            
+            &:before {
+                @include mat-icon;
+                padding: 8px;
+                font-size: 25px;
+                line-height: 1.5;
+                content: 'lock';
+                color: $white;
+            }
+        }
+        
+        p {
+            @include basic;
+            color: $gray-medium;
+            align-self: center;
+            flex: 1;            
+        }
+        
+        label {
+            @include basic;
+            color: $gray-medium;    
+            margin: 20px 0 0 0;
+        }
+        
+        input {
+            border: none;
+            border-bottom: $border-bottom;  
+            padding: $padding-basic 0;
+            outline: none;
+             
+            &:required {
+                &:focus {
+                border-bottom: 1px solid $red; 
+                margin-bottom: 5px;
+                }
+            }
+            
+            &:focus::-webkit-input-placeholder {
+                color: $red;
+            }
+            
+            &:focus + span{
+                &:before {
+                    @include basic;
+                    content: 'Required';
+                    color: $red;
+                    font-size: $font-xs-size;
+                } 
+            }
+        }
+        
+        button {
+            background-color: $blue;
+            color: $white;
+            text-transform: uppercase;
+            padding: $padding-basic;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    }
+}
+

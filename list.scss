@@ -8,18 +8,48 @@
     margin: 15px 10px;
     border-radius: 5px;
     color: $gray-dark;
+    height: fit-content;
     
     
     .list-title {
         display: flex;
         flex: 1 100%;
-        justify-content: space-between;
+        justify-content: flex-end;
         padding: $padding-basic;
         
         h2 {
             font-family: $font-family-basic;
             font-size: $font-mat-size;
             margin: auto 0;
+            flex: 1;
+        }
+        
+        .add-filter {
+            color: $blue;
+            
+            &:before {
+                @include mat-icon-m;
+                content: 'filter_list';  
+            }
+            
+            &:after {
+                text-transform: uppercase;
+                content: 'add filter';
+            }
+        }
+        
+        .create {
+            color: $blue;
+            
+            &:before {
+                @include mat-icon-m;
+                content: 'add';  
+            }
+            
+            &:after {
+                text-transform: uppercase;
+                content: 'create';
+            }
         }
         
         .refresh {
@@ -129,5 +159,109 @@
                 content: 'keyboard_arrow_right';  
             }
         }
+    }
+    
+    .search {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        padding: $padding-basic;
+        color: $gray-medium;
+        
+        input {
+            height: fit-content;
+            border: none;
+            border-bottom: $border-bottom;
+        }
+    }
+    
+    .posters {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 100%;
+        color: $white;
+    }
+    
+    .post-item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        align-content: flex-end;
+        margin: 2px;
+        flex: 1 20%;
+        height: 80%;
+        padding: $padding-basic;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        .post-name {
+            flex: 1 100%;
+        }
+        
+        .post-price {
+            flex: 1;
+            padding-left: $padding-basic;
+        }
+        
+        .post-edit {
+            align-self: flex-end;
+            
+            &:before {
+               @include mat-icon;
+                content: 'edit'; 
+            }
+        }
+    }
+    
+    .post-item-1 {
+        background-image: url(img/1.jpg);
+    }
+    
+    .post-item-2 {
+        background-image: url(img/2.jpg);
+    }
+    
+    .post-item-3 {
+        background-image: url(img/3.jpg);
+    }
+    
+    .post-item-4 {
+        background-image: url(img/4.jpg);
+    }
+    
+    .post-item-1 {
+        background-image: url(img/1.jpg);
+    }
+    
+    .post-item-5 {
+        background-image: url(img/5.jpg);
+    }
+    
+    .post-item-6 {
+        background-image: url(img/6.jpg);
+    }
+    
+    .post-item-7 {
+        background-image: url(img/7.jpg);
+    }
+    
+    .post-item-8 {
+        background-image: url(img/8.jpg);
+    }
+    
+    .post-item-9 {
+        background-image: url(img/9.jpg);
+    }
+    
+    .post-item-10 {
+        background-image: url(img/10.jpg);
+    }
+    
+    .post-item-11 {
+        background-image: url(img/11.jpg);
+    }
+    
+    .post-item-12 {
+        background-image: url(img/12.jpg);
     }
 }
