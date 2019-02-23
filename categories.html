@@ -5,27 +5,53 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="js.js"></script>
+        <script type="text/javascript">
+            function nav() {
+                var x = document.getElementById("menu-xl");
+                var y = document.getElementById("menu-xs");
+                if (x.style.display === "none") {
+                    x.style.display = "flex";
+                    y.style.display = "none";
+                } else {
+                    x.style.display = "none";
+                    y.style.display = "flex";
+                    y.style.flex = "0";
+                        }
+                }
+        </script>    
         <title>categories</title>
     </head>
     <body>
         <div class="container">
             <div class="global">
+                <div id="menu" onclick="nav()"><i class="material-icons">menu</i></div>
                 <h1>Posters Galore Admin</h1>
                 <div class="logout"></div>
             </div>
-            <nav>
+            <nav id="menu-xl">
                 <a id="dashboard" href=""></a>
                 <a id="customers" href=""></a>
                 <a id="segments" href=""></a>
                 <a id="others" href=""></a>
                 <a id="posters" href=""></a>
-                <a id="categories" href=""></a>
+                <a id="categories" class="active" href=""></a>
                 <a id="reviews" href=""></a>
                 <a id="configuration" href=""></a>
             </nav>
+            <nav id="menu-xs">
+                <a id="dashboard-xs" href=""></a>
+                <a id="customers-xs" href=""></a>
+                <a id="segments-xs" href=""></a>
+                <a id="others-xs" href=""></a>
+                <a id="posters-xs" href=""></a>
+                <a id="categories-xs" class="active" href=""></a>
+                <a id="reviews-xs" href=""></a>
+                <a id="configuration-xs" href=""></a>
+            </nav>
             <div class="list">
                 <div class="list-title">
-                    <h2>Categories list</h2>
+                    <h2>Categories List</h2>
                     <div class="refresh"></div>
                 </div>
                 <table>
@@ -98,7 +124,7 @@
                 </table>
                 <div class="table-footer">
                     <div class="total-rows">1-10 of 13</div>
-                    <div class="total-pages">1 2</div>
+                    <div class="total-pages">1 <span class="active-page">2</span></div>
                     <div class="next"></div>
                 </div>
             </div>

@@ -1,97 +1,162 @@
 nav {
     display: flex;
     flex-flow: row wrap;
-    flex: 1;
+    padding: 25px 0;
     
     a {
         @include basic;
         text-decoration: none;
         flex: 1 100%;
+        color: $gray-light;
+        
+        &:before {
+            @include mat-icon;
+        }
+        
+        &:hover {
+           color: $gray-dark;  
+        }
     }
     
-    a:before {
-        @include mat-icon;
-    } 
+    .active {
+        color: $gray-dark;
+    }
+}
+#menu-xl {
+    flex: 1;
     
     #dashboard {
         &:before {
             content: 'dashboard';
         }
-        
+
         &:after {
             content: 'Dashboard';
         }
     }
-    
+
     #customers {
         &:before {
             content: 'perm_identity';
         }
-        
+
         &:after {
             content: 'Customers';
         }
     }
-    
+
    #segments {
         &:before {
             content: 'label';
         }
-        
-        &:after {
-            content: 'Segments';
-        }
-    }
-    
-   #others {
-        &:before {
-            content: 'attach_money';
-        }
-        
-        &:after {
-            content: 'Others';
-        }
-    }
-   
-    #posters {
-        &:before {
-            content: 'perm_media';
-        }
-        
-        &:after {
-            content: 'Posters';
-        }
-    }
-    
-    #categories {
-        &:before {
-            content: 'turned_in';
-        }
-        
-        &:after {
-            content: 'Categories';
-        }
-    }
-   
-    #reviews {
-        &:before {
-            content: 'chat';
-        }
-        
-        &:after {
+
+       &:after {
+             content: 'Segments';
+         }
+     }
+
+    #others {
+         &:before {
+             content: 'attach_money';
+         }
+
+         &:after {
+             content: 'Others';
+         }
+     }
+
+     #posters {
+         &:before {
+             content: 'perm_media';
+         }
+
+         &:after {
+             content: 'Posters';
+         }
+     }
+
+     #categories {
+         &:before {
+             content: 'turned_in';
+         }
+
+         &:after {
+             content: 'Categories';
+         }
+     }
+
+     #reviews {
+         &:before {
+             content: 'chat';
+         }
+
+         &:after {
             content: 'Reviews';
         }
     }
-    
+
     #configuration {
         &:before {
             content: 'settings';
         }
-        
+
         &:after {
             content: 'Configuration';
         }
     }
 }
+        
+#menu-xs {
+    display: none;
+    
+    #dashboard-xs {
+        &:before {
+            content: 'dashboard';
+        }
+    }
+
+    #customers-xs {
+        &:before {
+            content: 'perm_identity';
+        }
+    }
+
+   #segments-xs {
+        &:before {
+            content: 'label';
+        }
+    }
+
+   #others-xs {
+        &:before {
+            content: 'attach_money';
+        }
+    }
+
+    #posters-xs {
+        &:before {
+            content: 'perm_media';
+        }
+    }
+
+    #categories-xs {
+        &:before {
+            content: 'turned_in';
+        }
+    }
+
+    #reviews-xs {
+        &:before {
+            content: 'chat';
+        }
+    }
+
+    #configuration-xs {
+        &:before {
+            content: 'settings';
+        }
+    }
+}
+
     
   
