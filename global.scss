@@ -2,33 +2,38 @@
     background-color: $blue;
     color: $white;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    padding: $padding-basic;
     flex: 1 100%;
+    text-align: left;
+    
+    #menu {
+        cursor: pointer;
+    }
     
     h1 {
         font-family: $font-family-basic;
         font-size: $font-h1-size;
-        margin: 0;
-        
-        &:before {
-            @include mat-icon;
-            content: 'menu';
-        }
+        margin: auto 0;
+        padding: 0 20px;
+        cursor: default;
     }
-    
+        
     .logout {
         @include basic;
-            
+        flex: 1;
+        text-align: end;
+        
         &:before {
             @include mat-icon;
             text-transform: lowercase;
             content: 'power_settings_new';
+            vertical-align: bottom;
         }    
         
         &:after {
             text-transform: uppercase;
             content: 'logout';
+            padding-left: 20px;
         }
     }
 }

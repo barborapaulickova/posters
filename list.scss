@@ -1,18 +1,32 @@
 .list {
+    @include box-shadow;
+    @include basic;
     display: flex;
     flex-flow: row wrap;
     flex: 5;
+    background-color: $white;
+    margin: 15px 10px;
+    border-radius: 5px;
+    color: $gray-dark;
+    
     
     .list-title {
         display: flex;
         flex: 1 100%;
         justify-content: space-between;
+        padding: $padding-basic;
+        
+        h2 {
+            font-family: $font-family-basic;
+            font-size: $font-mat-size;
+            margin: auto 0;
+        }
         
         .refresh {
-            @include basic;
+            color: $blue;
             
             &:before {
-                @include mat-icon;
+                @include mat-icon-m;
                 content: 'refresh';  
             }
             
@@ -24,23 +38,36 @@
     }
     
     table {
-    flex: 1 100%;
+        flex: 1 100%;
+        line-height: 1.5;
+        border-collapse: collapse;
         
+        tr {
+            border-bottom: $border-bottom; 
+            
+            th {
+                text-align: left;
+            }
+
+            td {
+                color: $gray-medium;
+            }
+        }
+
         .name {
-            @include basic;
             
             &:before { 
                 content: 'Name';
             }
             
             &:after {
-                @include mat-icon;
+                @include mat-icon-m;
                 content: 'arrow_upward'; 
             }
         }
         
         .products {
-            @include basic;
+            color: $blue;
             
             &:before {
                 @include mat-icon;
@@ -54,7 +81,7 @@
         }
         
         .edit {
-            @include basic;
+            color: $blue;
             
             &:before {
                 @include mat-icon;
@@ -69,12 +96,28 @@
     }
     
     .table-footer {
-    flex: 1 100%;
-    display: flex;
-    justify-content: flex-end;
+        flex: 1 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: $padding-basic;
+        color: $gray-medium;
+        
+        .total-rows, .total-pages {
+            margin: auto 10px;
+            padding: 0 20px;
+        }
+        
+        .total-pages {
+            letter-spacing: 20px;
+            color: $gray-dark;
+            
+            .active-page {
+                color: $blue;
+            }
+        }
         
         .next {
-             @include basic;
+            color: $blue; 
             
             &:before {
                 text-transform: uppercase;
@@ -82,7 +125,7 @@
             }
             
             &:after {
-                @include mat-icon;
+                @include mat-icon-m;
                 content: 'keyboard_arrow_right';  
             }
         }
