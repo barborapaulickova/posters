@@ -9,12 +9,12 @@
     .login-window {
         display: flex;
         flex-direction: column;
+        align-self: center;
         padding: $padding-basic;
         background-color: $white;
-        margin: 10% 35%;
-        min-height: 200px;
+        margin: 10% 0;
+        width: 330px;
         border-radius: 5px;
-        justify-content: center;
         
         .lock {
             background-color: $pink;
