@@ -2,12 +2,31 @@
     background-color: $blue;
     color: $white;
     display: flex;
-    padding: $padding-basic;
+    padding: 0 $padding-basic 0 0;
     flex: 1 100%;
     text-align: left;
     
     #menu {
+        background-color: $blue;
+        color: $white;
         cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        padding: $padding-basic;
+        
+        i {
+            font-size: $font-mat-size;
+        }
+        
+        &:hover {
+            background-color: $blue-dark;
+        }
+        
+        &:active {
+            transform: rotate(35deg);
+            background-color: $blue-light;
+        }
     }
     
     h1 {

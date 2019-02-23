@@ -9,12 +9,28 @@
   background-color: #283593;
   color: #fff;
   display: flex;
-  padding: 10px;
+  padding: 0 10px 0 0;
   flex: 1 100%;
   text-align: left;
 }
 .global #menu {
+  background-color: #283593;
+  color: #fff;
   cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+}
+.global #menu i {
+  font-size: 20px;
+}
+.global #menu:hover {
+  background-color: #232E7F;
+}
+.global #menu:active {
+  transform: rotate(35deg);
+  background-color: #2D3CA7;
 }
 .global h1 {
   font-family: sans-serif;
@@ -317,6 +333,7 @@ nav .active {
   height: fit-content;
   border: none;
   border-bottom: 1px solid #E0E0E0;
+  outline: none;
 }
 .list .posters {
   display: flex;
