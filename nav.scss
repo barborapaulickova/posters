@@ -8,6 +8,7 @@ nav {
         text-decoration: none;
         flex: 1 100%;
         color: $gray-light;
+        height: 50px;
         
         &:before {
             @include mat-icon;

@@ -57,6 +57,7 @@ nav a {
   text-decoration: none;
   flex: 1 100%;
   color: #928A83;
+  height: 50px;
 }
 nav a:before {
   font-family: "Material Icons";
@@ -165,17 +166,47 @@ nav .active {
   margin: 15px 10px;
   border-radius: 5px;
   color: #222222;
+  height: fit-content;
 }
 .list .list-title {
   display: flex;
   flex: 1 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 10px;
 }
 .list .list-title h2 {
   font-family: sans-serif;
   font-size: 20px;
   margin: auto 0;
+  flex: 1;
+}
+.list .list-title .add-filter {
+  color: #283593;
+}
+.list .list-title .add-filter:before {
+  font-family: "Material Icons";
+  font-size: 16px;
+  vertical-align: bottom;
+  margin: auto 10px;
+  content: "filter_list";
+}
+.list .list-title .add-filter:after {
+  text-transform: uppercase;
+  content: "add filter";
+}
+.list .list-title .create {
+  color: #283593;
+}
+.list .list-title .create:before {
+  font-family: "Material Icons";
+  font-size: 16px;
+  vertical-align: bottom;
+  margin: auto 10px;
+  content: "add";
+}
+.list .list-title .create:after {
+  text-transform: uppercase;
+  content: "create";
 }
 .list .list-title .refresh {
   color: #283593;
@@ -275,6 +306,92 @@ nav .active {
   margin: auto 10px;
   content: "keyboard_arrow_right";
 }
+.list .search {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding: 10px;
+  color: #757575;
+}
+.list .search input {
+  height: fit-content;
+  border: none;
+  border-bottom: 1px solid #E0E0E0;
+}
+.list .posters {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 100%;
+  color: #fff;
+}
+.list .post-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-end;
+  margin: 2px;
+  flex: 1 20%;
+  height: 80%;
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.list .post-item .post-name {
+  flex: 1 100%;
+}
+.list .post-item .post-price {
+  flex: 1;
+  padding-left: 10px;
+}
+.list .post-item .post-edit {
+  align-self: flex-end;
+}
+.list .post-item .post-edit:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  content: "edit";
+}
+.list .post-item-1 {
+  background-image: url(img/1.jpg);
+}
+.list .post-item-2 {
+  background-image: url(img/2.jpg);
+}
+.list .post-item-3 {
+  background-image: url(img/3.jpg);
+}
+.list .post-item-4 {
+  background-image: url(img/4.jpg);
+}
+.list .post-item-1 {
+  background-image: url(img/1.jpg);
+}
+.list .post-item-5 {
+  background-image: url(img/5.jpg);
+}
+.list .post-item-6 {
+  background-image: url(img/6.jpg);
+}
+.list .post-item-7 {
+  background-image: url(img/7.jpg);
+}
+.list .post-item-8 {
+  background-image: url(img/8.jpg);
+}
+.list .post-item-9 {
+  background-image: url(img/9.jpg);
+}
+.list .post-item-10 {
+  background-image: url(img/10.jpg);
+}
+.list .post-item-11 {
+  background-image: url(img/11.jpg);
+}
+.list .post-item-12 {
+  background-image: url(img/12.jpg);
+}
 
 @media (max-width: 500px) {
   nav a {
@@ -300,8 +417,14 @@ nav .active {
   .list table .products:before, .list table .edit:before {
     font-size: 16px;
   }
+  .list .table-footer .total-pages {
+    letter-spacing: 5px;
+  }
   .list .table-footer .next:after {
     font-size: 10px;
+  }
+  .list .post-item {
+    height: 30%;
   }
 
   #menu-xs {
@@ -312,6 +435,86 @@ nav .active {
   #menu-xl {
     display: none;
   }
+}
+.login-container {
+  background-image: url(img/login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+}
+.login-container .login-window {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  margin: 10% 35%;
+  min-height: 200px;
+  border-radius: 5px;
+  justify-content: center;
+}
+.login-container .login-window .lock {
+  background-color: #F50057;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-self: center;
+}
+.login-container .login-window .lock:before {
+  font-family: "Material Icons";
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: bottom;
+  padding: 8px;
+  font-size: 25px;
+  line-height: 1.5;
+  content: "lock";
+  color: #fff;
+}
+.login-container .login-window p {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #757575;
+  align-self: center;
+  flex: 1;
+}
+.login-container .login-window label {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #757575;
+  margin: 20px 0 0 0;
+}
+.login-container .login-window input {
+  border: none;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 10px 0;
+  outline: none;
+}
+.login-container .login-window input:required:focus {
+  border-bottom: 1px solid #ff0000;
+  margin-bottom: 5px;
+}
+.login-container .login-window input:focus::-webkit-input-placeholder {
+  color: #ff0000;
+}
+.login-container .login-window input:focus + span:before {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  content: "Required";
+  color: #ff0000;
+  font-size: 10px;
+}
+.login-container .login-window button {
+  background-color: #283593;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
