@@ -41,6 +41,7 @@
         @include basic;
         flex: 1;
         text-align: end;
+        margin: auto;
         
         &:before {
             @include mat-icon;

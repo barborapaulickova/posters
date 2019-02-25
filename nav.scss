@@ -38,7 +38,7 @@ nav {
 
     #customers {
         &:before {
-            content: 'perm_identity';
+            content: 'person';
         }
 
         &:after {
@@ -118,7 +118,7 @@ nav {
 
     #customers-xs {
         &:before {
-            content: 'perm_identity';
+            content: 'person';
         }
     }
 

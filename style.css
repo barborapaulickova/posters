@@ -45,6 +45,7 @@
   font-weight: 600;
   flex: 1;
   text-align: end;
+  margin: auto;
 }
 .global .logout:before {
   font-family: "Material Icons";
@@ -98,7 +99,7 @@ nav .active {
   content: "Dashboard";
 }
 #menu-xl #customers:before {
-  content: "perm_identity";
+  content: "person";
 }
 #menu-xl #customers:after {
   content: "Customers";
@@ -147,7 +148,7 @@ nav .active {
   content: "dashboard";
 }
 #menu-xs #customers-xs:before {
-  content: "perm_identity";
+  content: "person";
 }
 #menu-xs #segments-xs:before {
   content: "label";
@@ -526,13 +527,13 @@ nav .active {
     height: 30%;
   }
 
+  #menu-xl {
+    display: none;
+  }
+
   #menu-xs {
     display: flex;
     flex: 0;
-  }
-
-  #menu-xl {
-    display: none;
   }
 
   .login-container .login-window {
