@@ -37,6 +37,10 @@
                 letter-spacing: 5px;
             }
             
+            .total-rows {
+                padding: 0;
+            }
+            
             .next {
                 &:after {
                     font-size: $font-xs-size;
@@ -46,6 +50,7 @@
         
         .post-item {
             height: 30%;
+            flex: 1 25%;
         }
     }
     

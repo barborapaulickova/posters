@@ -520,11 +520,15 @@ nav .active {
   .list .table-footer .total-pages {
     letter-spacing: 5px;
   }
+  .list .table-footer .total-rows {
+    padding: 0;
+  }
   .list .table-footer .next:after {
     font-size: 10px;
   }
   .list .post-item {
     height: 30%;
+    flex: 1 25%;
   }
 
   #menu-xl {
