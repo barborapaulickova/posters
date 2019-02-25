@@ -511,6 +511,10 @@ nav .active {
   .list {
     font-size: 10px;
   }
+  .list .list-title {
+    text-align: center;
+    flex-wrap: wrap;
+  }
   .list .list-title h2 {
     font-size: 12px;
   }
