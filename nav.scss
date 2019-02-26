@@ -2,6 +2,7 @@ nav {
     display: flex;
     flex-flow: row wrap;
     padding: 25px 0;
+    align-content: baseline;
     
     a {
         @include basic;
